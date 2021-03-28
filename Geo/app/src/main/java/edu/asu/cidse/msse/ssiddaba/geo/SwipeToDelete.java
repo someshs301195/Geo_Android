@@ -14,6 +14,32 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import edu.asu.cidse.msse.ssiddaba.geo.R;
 
+/**
+ * Copyright (c) 2021 Somesh Siddabasappa,
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * <p>
+ * Purpose: SER 423 Course Assignment
+ * <p>
+ * Right to use: I provide the instructor and the University with the right to
+ * build and evaluate the software package for the purpose of determining your
+ * grade and program assessment.
+ *
+ * @author Somesh Siddabasappa ssiddaba@asu.edu
+ * Software Engineering, CIDSE, MSSE, Arizona State University Polytechnic
+ * @version March 24, 2021
+ */
+
 public class SwipeToDelete extends ItemTouchHelper.SimpleCallback {
 
     private PlaceListAdapter adapter;
