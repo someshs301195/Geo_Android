@@ -12,7 +12,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -145,6 +148,19 @@ public class MainActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onDestroy");
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_add, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    // handle button activities
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        launchPlaceDetailsActivity(placeNames.size());
+        return true;
+    }
+
     public void launchPlaceDetailsActivity(int position) {
         Context context = getApplicationContext();
         // create intent and start activity to add new place
@@ -173,7 +189,14 @@ public class MainActivity extends AppCompatActivity {
                     (PlaceDescription) data.getSerializableExtra(PLACE);
 
             if (requestCode == placeNames.size()) {
-                placeLibrary.add(newPlace);
+                if (placeNames.contains(newPlace.getName())) {
+                    Toast.makeText(this,
+                            "Place name already exists, please try with a different name",
+                            Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    placeLibrary.add(newPlace);
+                }
             } else {
                 placeLibrary.update(newPlace);
             }

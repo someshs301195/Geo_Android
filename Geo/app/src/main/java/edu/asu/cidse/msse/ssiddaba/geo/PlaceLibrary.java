@@ -161,7 +161,7 @@ public class PlaceLibrary {
     }
 
     public void remove(String name) {
-        String delete = "delete from place where student.name=?;";
+        String delete = "delete from place where place.name=?;";
         try {
             PlaceDB placeDB = new PlaceDB(context);
             SQLiteDatabase db = placeDB.openDB();
