@@ -1,4 +1,4 @@
-package edu.asu.cidse.msse.ssiddaba.geo;
+package edu.asu.msse.ssiddaba.geo;
 
 import android.content.ContentValues;
 import android.content.Context;

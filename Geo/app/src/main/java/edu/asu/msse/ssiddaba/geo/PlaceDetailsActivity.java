@@ -1,4 +1,4 @@
-package edu.asu.cidse.msse.ssiddaba.geo;
+package edu.asu.msse.ssiddaba.geo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import edu.asu.msse.ssiddaba.geo.PlaceLibrary;
+import edu.asu.msse.ssiddaba.geo.R;
+import edu.asu.msse.ssiddaba.geo.MainActivity;
+import edu.asu.msse.ssiddaba.geo.PlaceDescription;
 
 /**
  * Copyright (c) 2021 Somesh Siddabasappa,

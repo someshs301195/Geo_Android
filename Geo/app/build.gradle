@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "edu.asu.cidse.msse.ssiddaba.geo"
+        applicationId "edu.asu.msse.ssiddaba.geo"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1

@@ -1,4 +1,4 @@
-package edu.asu.cidse.msse.ssiddaba.geo;
+package edu.asu.msse.ssiddaba.geo;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,6 +15,8 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+
+import edu.asu.msse.ssiddaba.geo.R;
 
 /**
  * Copyright (c) 2021 Somesh Siddabasappa,

@@ -1,4 +1,4 @@
-package edu.asu.cidse.msse.ssiddaba.geo;
+package edu.asu.msse.ssiddaba.geo;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,6 +27,13 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+
+import edu.asu.msse.ssiddaba.geo.PlaceDescription;
+import edu.asu.msse.ssiddaba.geo.PlaceDetailsActivity;
+import edu.asu.msse.ssiddaba.geo.PlaceLibrary;
+import edu.asu.msse.ssiddaba.geo.PlaceListAdapter;
+import edu.asu.msse.ssiddaba.geo.R;
+import edu.asu.msse.ssiddaba.geo.SwipeToDelete;
 
 /**
  * Copyright (c) 2021 Somesh Siddabasappa,
@@ -65,11 +72,11 @@ public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG =
             MainActivity.class.getSimpleName();
     public static final String PLACE_NAME =
-            "edu.asu.cidse.msse.ssiddaba.geo.placeName";
+            "edu.asu.msse.ssiddaba.geo.placeName";
     public static final String PLACE_LIST =
-            "edu.asu.cidse.msse.ssiddaba.geo.placeList";
+            "edu.asu.msse.ssiddaba.geo.placeList";
     public static final String PLACE =
-            "edu.asu.cidse.msse.ssiddaba.geo.place";
+            "edu.asu.msse.ssiddaba.geo.place";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -198,7 +205,13 @@ public class MainActivity extends AppCompatActivity {
                     placeLibrary.add(newPlace);
                 }
             } else {
-                placeLibrary.update(newPlace);
+                if (placeNames.get(requestCode).equals(newPlace.getName())) {
+                    placeLibrary.update(newPlace);
+                }
+                else {
+                    placeLibrary.remove(placeNames.get(requestCode));
+                    placeLibrary.add(newPlace);
+                }
             }
 
             refreshTableView();

@@ -1,4 +1,4 @@
-package edu.asu.cidse.msse.ssiddaba.geo;
+package edu.asu.msse.ssiddaba.geo;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +14,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+
+import edu.asu.msse.ssiddaba.geo.PlaceDescription;
+import edu.asu.msse.ssiddaba.geo.PlaceLibrary;
+import edu.asu.msse.ssiddaba.geo.R;
 
 /**
  * Copyright (c) 2021 Somesh Siddabasappa,

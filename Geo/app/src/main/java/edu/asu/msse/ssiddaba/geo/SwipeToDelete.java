@@ -1,4 +1,4 @@
-package edu.asu.cidse.msse.ssiddaba.geo;
+package edu.asu.msse.ssiddaba.geo;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -12,7 +12,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import edu.asu.cidse.msse.ssiddaba.geo.R;
+import edu.asu.msse.ssiddaba.geo.R;
 
 /**
  * Copyright (c) 2021 Somesh Siddabasappa,
