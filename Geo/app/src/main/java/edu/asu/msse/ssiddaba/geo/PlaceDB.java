@@ -33,7 +33,7 @@ import edu.asu.msse.ssiddaba.geo.R;
  * Purpose: SER 423 Course Assignment
  * <p>
  * Right to use: I provide the instructor and the University with the right to
- * build and evaluate the software package for the purpose of determining your
+ * build and evaluate the software package for the purpose of determining my
  * grade and program assessment.
  *
  * @author Somesh Siddabasappa ssiddaba@asu.edu
@@ -69,16 +69,7 @@ public class PlaceDB extends SQLiteOpenHelper {
         }
     }
 
-    /**
-     * Does the database exist and has it been initialized? This method determines whether
-     * the database needs to be copied to the data/data/pkgName/files directory by
-     * checking whether the file exists. If it does it checks to see whether the db is
-     * uninitialized or whether it has the course table.
-     *
-     * @return false if the database file needs to be copied from the assets directory, true
-     * otherwise.
-     */
-    private boolean checkDB() {    //does the database exist and is it initialized?
+    private boolean checkDB() {
         SQLiteDatabase checkDB = null;
         boolean placeTabExists = false;
         try {
@@ -168,7 +159,6 @@ public class PlaceDB extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
     }
 
     private void debug(String hdr, String msg) {

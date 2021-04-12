@@ -53,7 +53,7 @@ import edu.asu.msse.ssiddaba.geo.SwipeToDelete;
  * Purpose: SER 423 Course Assignment
  * <p>
  * Right to use: I provide the instructor and the University with the right to
- * build and evaluate the software package for the purpose of determining your
+ * build and evaluate the software package for the purpose of determining my
  * grade and program assessment.
  *
  * @author Somesh Siddabasappa ssiddaba@asu.edu
